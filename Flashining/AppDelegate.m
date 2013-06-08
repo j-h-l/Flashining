@@ -10,7 +10,8 @@
 #import "FlashcardModel.h"
 #import <EvernoteSession.h>
 #import <ENConstants.h>
-#import "APIKEYS.h" // apikeys stored here 
+#import "APIKEYS.h" // apikeys stored here
+#import <PonyDebugger.h>
 
 @implementation AppDelegate
 
@@ -29,6 +30,12 @@
     [EvernoteSession setSharedSessionHost:EVERNOTE_HOST
                               consumerKey:CONSUMER_KEY
                            consumerSecret:CONSUMER_SECRET];
+    
+    PDDebugger *debugger = [PDDebugger defaultInstance];
+//    [debugger autoConnect];
+    [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
+    [debugger enableCoreDataDebugging];
+    [debugger addManagedObjectContext:context withName:@"Flashcards MOC"];
     
     return YES;
 }

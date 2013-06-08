@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4F9CD21763CA0F00DB32D0 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F9CD11763CA0E00DB32D0 /* InitialViewController.m */; };
+		5BA137091762A3B1008E38B2 /* MyJAControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA137081762A3B1008E38B2 /* MyJAControllerViewController.m */; };
+		5BA1370C1762A71E008E38B2 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1370B1762A71E008E38B2 /* LeftMenuViewController.m */; };
 		5BDAF171175FFD69003F46D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDAF170175FFD69003F46D0 /* UIKit.framework */; };
 		5BDAF173175FFD69003F46D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDAF172175FFD69003F46D0 /* Foundation.framework */; };
 		5BDAF175175FFD69003F46D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDAF174175FFD69003F46D0 /* CoreGraphics.framework */; };
@@ -30,6 +33,12 @@
 
 /* Begin PBXFileReference section */
 		5B48B79D17613D6D00333F02 /* APIKEYS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKEYS.h; sourceTree = "<group>"; };
+		5B4F9CD01763CA0E00DB32D0 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		5B4F9CD11763CA0E00DB32D0 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		5BA137071762A3B1008E38B2 /* MyJAControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyJAControllerViewController.h; sourceTree = "<group>"; };
+		5BA137081762A3B1008E38B2 /* MyJAControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyJAControllerViewController.m; sourceTree = "<group>"; };
+		5BA1370A1762A71E008E38B2 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		5BA1370B1762A71E008E38B2 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		5BDAF16D175FFD69003F46D0 /* Flashining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDAF170175FFD69003F46D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5BDAF172175FFD69003F46D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +87,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA137061762A371008E38B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDAF18B175FFD69003F46D0 /* ViewController.h */,
+				5BDAF18C175FFD69003F46D0 /* ViewController.m */,
+				5BA137071762A3B1008E38B2 /* MyJAControllerViewController.h */,
+				5BA137081762A3B1008E38B2 /* MyJAControllerViewController.m */,
+				5BA1370A1762A71E008E38B2 /* LeftMenuViewController.h */,
+				5BA1370B1762A71E008E38B2 /* LeftMenuViewController.m */,
+				5B4F9CD01763CA0E00DB32D0 /* InitialViewController.h */,
+				5B4F9CD11763CA0E00DB32D0 /* InitialViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		5BDAF164175FFD69003F46D0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +140,7 @@
 				5BDAF180175FFD69003F46D0 /* AppDelegate.m */,
 				5B48B79D17613D6D00333F02 /* APIKEYS.h */,
 				5BDAF188175FFD69003F46D0 /* MainStoryboard.storyboard */,
-				5BDAF18B175FFD69003F46D0 /* ViewController.h */,
-				5BDAF18C175FFD69003F46D0 /* ViewController.m */,
+				5BA137061762A371008E38B2 /* Controllers */,
 				5BDAF177175FFD69003F46D0 /* Supporting Files */,
 			);
 			path = Flashining;
@@ -263,6 +286,9 @@
 				5BDAF1A317600821003F46D0 /* Card.m in Sources */,
 				5BDAF1A417600821003F46D0 /* Deck.m in Sources */,
 				5BDAF1A7176008CC003F46D0 /* FlashcardModel.m in Sources */,
+				5BA137091762A3B1008E38B2 /* MyJAControllerViewController.m in Sources */,
+				5BA1370C1762A71E008E38B2 /* LeftMenuViewController.m in Sources */,
+				5B4F9CD21763CA0F00DB32D0 /* InitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

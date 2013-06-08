@@ -12,3 +12,5 @@ pod 'PonyDebugger', '~> 0.3.0'
 
 pod 'AFNetworking', '~> 1.3.0'
 #pod 'JSONKit'
+
+pod 'PonyDebugger', '~> 0.3.0'
