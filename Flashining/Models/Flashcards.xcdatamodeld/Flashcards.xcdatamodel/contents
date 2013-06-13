@@ -4,7 +4,7 @@
         <attribute name="definition" attributeType="String" syncable="YES"/>
         <attribute name="fact" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="visual" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="deck" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck" syncable="YES"/>
+        <relationship name="deck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck" syncable="YES"/>
     </entity>
     <entity name="Deck" representedClassName="Deck" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>

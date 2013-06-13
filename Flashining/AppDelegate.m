@@ -12,6 +12,8 @@
 #import <ENConstants.h>
 #import "APIKEYS.h" // apikeys stored here
 #import <PonyDebugger.h>
+#import "Card.h"
+#import "Deck.h"
 
 @implementation AppDelegate
 
@@ -23,6 +25,17 @@
     } else {
         NSLog(@"Could not create context");
     }
+    
+//    Card *c = [Card insertInManagedObjectContext:context];
+//    c.fact = @"我";
+//    c.definition = @"Me or I - wo3";
+//    Deck *d = [Deck insertInManagedObjectContext:context];
+//    d.name = @"Chinese characters";
+//    c.deck = d;
+//    
+//    NSError *err;
+//    [context save:&err];
+//    NSLog(@"Error here: %@", err);
     
     NSString *EVERNOTE_HOST = BootstrapServerBaseURLStringSandbox; // sandbox.evernote.com - use during development
     NSString *CONSUMER_KEY = [NSString stringWithUTF8String:EN_CONSUMER_KEY];
